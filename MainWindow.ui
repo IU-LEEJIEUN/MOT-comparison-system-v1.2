@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2422</width>
+    <height>1234</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>1234</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_1">
+      <item>
+       <widget class="QLabel" name="ALGOname1">
+        <property name="minimumSize">
+         <size>
+          <width>317</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="ALGOname2">
+        <property name="minimumSize">
+         <size>
+          <width>317</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="ALGOname3">
+        <property name="minimumSize">
+         <size>
+          <width>317</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="VideoWindow1">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>800</width>
+          <height>600</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid rgb(14, 82, 152)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="VideoWindow2">
+        <property name="minimumSize">
+         <size>
+          <width>800</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid rgb(14, 82, 152)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="VideoWindow3">
+        <property name="minimumSize">
+         <size>
+          <width>800</width>
+          <height>450</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid rgb(14, 82, 152)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="minimumSize">
+         <size>
+          <width>1500</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #4A708B;
+background: #C0C0C0;
+height: 12px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 1px solid #4A708B;
+height: 16px;
+border-radius: 5px;
+}
+
+QSlider::add-page:horizontal {
+background: #575757;
+border: 0px solid #777;
+height: 16px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal 
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, 
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 16px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA, 
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 16px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="timeLabel">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="FPS">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>FPS:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CurrentFrame">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Current Frame:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>150</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Skip to</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="margin">
+         <number>8</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="FrameEdit">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>th Frame</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SkipBtn">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton {
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 1px solid rgb(128,126,126);
+ border-radius: 5px;
+}
+.QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 1px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+.QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 1px solid rgb(3,110,183);
+ border-radius: 5px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Skip</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>270</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="broadcastBtn">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopBtn">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="PreFrameBtn">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">.QPushButton {
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 1px solid rgb(128,126,126);
+ border-radius: 5px;
+}
+.QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 1px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+.QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 1px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Previous Frame</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="NextFrameBtn">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">.QPushButton {
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 1px solid rgb(128,126,126);
+ border-radius: 5px;
+}
+.QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 1px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+.QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 1px solid rgb(3,110,183);
+ border-radius: 5px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Next Frame</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>910</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <widget class="QTableWidget" name="indicator_table">
+      <property name="minimumSize">
+       <size>
+        <width>1488</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>6666666</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2422</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Algorithm</string>
+    </property>
+    <addaction name="actionSORT"/>
+    <addaction name="actionDeepSORT"/>
+    <addaction name="actionByteTrack"/>
+    <addaction name="actionC_BIoUTrack"/>
+    <addaction name="actionUAVMOT"/>
+    <addaction name="actionBotSORT"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Load Video</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionSORT">
+   <property name="text">
+    <string>SORT</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionDeepSORT">
+   <property name="text">
+    <string>DeepSORT</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionByteTrack">
+   <property name="text">
+    <string>ByteTrack</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionC_BIoUTrack">
+   <property name="text">
+    <string>C-BIoUTrack</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionUAVMOT">
+   <property name="text">
+    <string>UAVMOT</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionBotSORT">
+   <property name="text">
+    <string>BotSORT</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

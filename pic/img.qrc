@@ -1,0 +1,15 @@
+<RCC>
+    <qresource>
+        <file>broadcastBtn_hover.png</file>
+        <file>broadcastBtn_normal.png</file>
+        <file>broadcastBtn_press.png</file>
+        <file>logo.png</file>
+        <file>background_1.png</file>
+        <file>background.png</file>
+        <file>pauseBtn_hover.png</file>
+        <file>pauseBtn_normal.png</file>
+        <file>pauseBtn_press.png</file>
+        <file>stopBtn_normal.png</file>
+        <file>stopBtn_press.png</file>
+    </qresource>
+</RCC>

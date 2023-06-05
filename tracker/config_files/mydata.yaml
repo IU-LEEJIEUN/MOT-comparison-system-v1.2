@@ -1,0 +1,39 @@
+DATASET_ROOT: '../data/datasets/VisDrone2019'
+
+CATEGORY_DICT:
+  0: 'pedestrain'
+  1: 'people'
+  2: 'bicycle'
+  3: 'car'
+  4: 'van'
+  5: 'truck'
+  6: 'tricycle'
+  7: 'awning-tricycle'
+  8: 'bus'
+  9: 'motor'
+
+CERTAIN_SEQS:
+  -
+
+IGNORE_SEQS:  # Seqs you want to ignore
+  -
+
+YAML_DICT:  '../data/visdrone_all.yaml'  # NOTE: ONLY for yolo v5 model loader(func DetectMultiBackend)
+
+TRACK_EVAL:  # If use TrackEval to evaluate, use these configs
+  'DISPLAY_LESS_PROGRESS': False
+  'GT_FOLDER': './test_video/annotations'
+  'TRACKERS_FOLDER': './multi_track_result'
+  'SKIP_SPLIT_FOL': True
+  'TRACKER_SUB_FOLDER': ''
+  'SEQ_INFO':
+    'uav0000013_01392_v': 118
+    'uav0000020_00406_v': 501
+    'uav0000072_04488_v': 85
+    'uav0000072_05448_v': 217
+    'uav0000072_06432_v': 97
+    'uav0000073_04464_v': 312
+    'uav0000079_00480_v': 361
+    'uav0000084_00000_v': 516
+    'uav0000086_00000_v': 464
+  'GT_LOC_FORMAT': '{gt_folder}/{seq}.txt'
